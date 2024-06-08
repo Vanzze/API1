@@ -53,7 +53,7 @@ class AuthController extends Controller
 
         if(!Hash::check($request->password, $user->password)){
             return response()->json([
-                'error' => 'Email atau Password anda salah blablabla!'
+                'error' => 'Email atau Password anda salah'
             ], 400);
         }
 
